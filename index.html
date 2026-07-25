@@ -6,18 +6,6 @@
     <title>Diamond Vault Collectibles | Premium Pokémon Slab Packs</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navContainer = document.querySelector('.nav-container');
-
-    hamburger.addEventListener('click', () => {
-        navContainer.classList.toggle('active');
-        
-        // Optional: Animate hamburger to X
-        hamburger.classList.toggle('active');
-    });
-</script>
 
 <body>
    <!-- HEADER / NAV -->
@@ -121,8 +109,17 @@
     </footer>
 
     <script>
-        // Placeholder for future Shopify integration
-        console.log("Website ready - Shopify integration coming soon");
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navContainer = document.querySelector('.nav-container');
+
+        hamburger.addEventListener('click', () => {
+            navContainer.classList.toggle('active');
+        
+            // Optional: Animate hamburger to X
+            hamburger.classList.toggle('active');
+        });
     </script>
+    
 </body>
 </html>

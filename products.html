@@ -6,19 +6,6 @@
     <title>Shop - Diamond Vault Collectibles</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navContainer = document.querySelector('.nav-container');
-
-    hamburger.addEventListener('click', () => {
-        navContainer.classList.toggle('active');
-        
-        // Optional: Animate hamburger to X
-        hamburger.classList.toggle('active');
-    });
-</script>
-
 <body>
     <!-- HEADER / NAV -->
     <header>
@@ -66,27 +53,29 @@
                     View Checklist
                     </a>
                 </div>
+            </div>
             -->
 
-                <!-- Sold Out Pack -->
-                <div class="product-card sold-out">
-                    <div class="product-link">
-                        <img src="images/packs/TestImage.jpeg" alt="Sold Out Pack">
-                        <div class="sold-out-overlay">Sold Out</div>
-                    </div>
+            <!-- Add more AVAILABLE product-card blocks here (copy & paste) -->
 
-                    <h3>Test Series</h3>
-
-                    <a href="https://docs.google.com/spreadsheets/d/1jjbE2EB-6fbytsYNqZhONA9_LTjYlJl6lU5DqyEpDlE/edit?gid=584979122#gid=584979122"
-                    target="_blank"
-                    class="checklist-btn">
-                        View Checklist
-                    </a>
+            <!-- Sold Out Pack -->
+            <div class="product-card sold-out">
+                <div class="product-link">
+                    <img src="images/packs/TestImage.jpeg" alt="Sold Out Pack">
+                    <div class="sold-out-overlay">Sold Out</div>
                 </div>
 
-                <!-- Add more product-card blocks here (copy & paste) -->
+                <h3>Test Series</h3>
 
+                <a href="https://docs.google.com/spreadsheets/d/1jjbE2EB-6fbytsYNqZhONA9_LTjYlJl6lU5DqyEpDlE/edit?gid=584979122#gid=584979122"
+                target="_blank"
+                class="checklist-btn">
+                    View Checklist
+                </a>
             </div>
+
+            <!-- Add more SOLD OUT product-card blocks here (copy & paste) -->
+            
         </div>
     </section>
 
@@ -117,4 +106,19 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navContainer = document.querySelector('.nav-container');
+
+        hamburger.addEventListener('click', () => {
+            navContainer.classList.toggle('active');
+        
+            // Optional: Animate hamburger to X
+            hamburger.classList.toggle('active');
+        });
+    </script>
+    
+</body>
 </html>

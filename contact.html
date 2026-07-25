@@ -6,18 +6,6 @@
     <title>Contact Us - Diamond Vault Collectibles</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navContainer = document.querySelector('.nav-container');
-
-    hamburger.addEventListener('click', () => {
-        navContainer.classList.toggle('active');
-        
-        // Optional: Animate hamburger to X
-        hamburger.classList.toggle('active');
-    });
-</script>
 
 <body>
     <!-- HEADER / NAV -->
@@ -95,5 +83,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navContainer = document.querySelector('.nav-container');
+
+        hamburger.addEventListener('click', () => {
+            navContainer.classList.toggle('active');
+        
+            // Optional: Animate hamburger to X
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
