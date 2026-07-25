@@ -6,16 +6,36 @@
     <title>Diamond Vault Collectibles | Premium Pokémon Slab Packs</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navContainer = document.querySelector('.nav-container');
+
+    hamburger.addEventListener('click', () => {
+        navContainer.classList.toggle('active');
+        
+        // Optional: Animate hamburger to X
+        hamburger.classList.toggle('active');
+    });
+</script>
+
 <body>
-    <!-- HEADER / NAV -->
+   <!-- HEADER / NAV -->
     <header>
         <nav class="navbar">
-            <!-- Logo - Left -->
+            <!-- Logo -->
             <div class="logo">
                 <h1>DIAMOND VAULT COLLECTIBLES</h1>
             </div>
 
-            <!-- Centered Navigation -->
+            <!-- Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
             <div class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -30,8 +50,8 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <img src="images/LogoTransparent0.png" alt="Diamond Vault Logo" class="diamondvault-logo">
-            <h1>HIGH QUALITY MYSTERY PACKS</h1>
+            <img src="images/LogoWhiteTransparent0.png" alt="Diamond Vault Logo" class="diamondvault-logo">
+            <h1>PROFESSIONALLY SEALED SURPRISE PRODUCTS</h1>
         </div>
     </section>
 
@@ -49,16 +69,16 @@
             <h2>What Sets Us Apart</h2>
             <div class="features">
                 <div class="feature-card">
-                    <h3>Curated, not random</h3>
-                    <p>Every repack is thoughtfully built, not filler around a chase card</p>
+                    <h3>Transparency</h3>
+                    <p>Easily accessible public checklist for all series produces</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Collector First</h3>
-                    <p>Run by people who know and respect the Pokémon TCG community.</p>
+                    <h3>Quality</h3>
+                    <p>From the cards inside to the packaging itself, everything is handled to a professional standard</p>
                 </div>
                 <div class="feature-card">
                     <h3>Consistency</h3>
-                    <p>A track record collectors can count on.</p>
+                    <p>The same high standard applies to every series, backed by a strict process</p>
                 </div>
             </div>
         </div>
@@ -68,7 +88,7 @@
     <section id="aboutUs" class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Diamond Vault Collectibles specializes in mystery slab and single repacks built for Pokémon collectors. Every repack is curated with care and transparency, giving you a real shot at genuine value and the trill of the pull.</p>
+            <p>Diamond Vault Collectibles specializes in mystery slab and single repacks built for TCG collectors. Every repack is curated with care and transparency.</p>
         </div>
     </section>
 
@@ -78,7 +98,7 @@
             <div class="footer-content">
                 <div>
                     <h3>Diamond Vaults Collectibles</h3>
-                    <p>Premium Pokémon Mystery Packs</p>
+                    <p>Premium TCG Products</p>
                 </div>
 
                 <div>

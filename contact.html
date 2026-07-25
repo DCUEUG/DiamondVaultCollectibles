@@ -6,16 +6,36 @@
     <title>Contact Us - Diamond Vault Collectibles</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navContainer = document.querySelector('.nav-container');
+
+    hamburger.addEventListener('click', () => {
+        navContainer.classList.toggle('active');
+        
+        // Optional: Animate hamburger to X
+        hamburger.classList.toggle('active');
+    });
+</script>
+
 <body>
     <!-- HEADER / NAV -->
-    <header>
+   <header>
         <nav class="navbar">
-            <!-- Logo - Left -->
+            <!-- Logo -->
             <div class="logo">
                 <h1>DIAMOND VAULT COLLECTIBLES</h1>
             </div>
 
-            <!-- Centered Navigation -->
+            <!-- Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
             <div class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -54,7 +74,7 @@
             <div class="footer-content">
                 <div>
                     <h3>Diamond Vaults Collectibles</h3>
-                    <p>Premium Pokémon Mystery Packs</p>
+                    <p>Premium TCG Products</p>
                 </div>
 
                 <div>
